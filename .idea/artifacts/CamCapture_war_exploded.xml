@@ -1,0 +1,39 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="CamCapture:war exploded">
+    <output-path>$PROJECT_DIR$/target/camCapture-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="CamCapture" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.bytedeco:javacv:1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco:javacpp:1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:opencv:3.0.0-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:opencv:macosx-x86_64:3.0.0-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:ffmpeg:2.8.1-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:ffmpeg:macosx-x86_64:2.8.1-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:flycapture:2.8.3.1-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:flycapture:macosx-x86_64:2.8.3.1-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:libdc1394:2.2.3-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:libdc1394:macosx-x86_64:2.2.3-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:libfreenect:0.5.3-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:libfreenect:macosx-x86_64:0.5.3-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:videoinput:0.200-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:videoinput:macosx-x86_64:0.200-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:artoolkitplus:2.3.1-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:artoolkitplus:macosx-x86_64:2.3.1-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:flandmark:1.07-1.1" />
+          <element id="library" level="project" name="Maven: org.bytedeco.javacpp-presets:flandmark:macosx-x86_64:1.07-1.1" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.4.1" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.4.1" />
+          <element id="library" level="project" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/camCapture-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="CamCapture/web/Web" />
+    </root>
+  </artifact>
+</component>

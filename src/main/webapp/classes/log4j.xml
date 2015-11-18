@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="trace" strict="true" name="XMLConfigTest"
+               packages="">
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <RollingRandomAccessFile name="RollingRandomAccessFileDebug" fileName="/local/deploy/logs/debug.log"
+                                 filePattern="logs/$${date:yyyy-MM}/etl-%d{MM-dd-yyyy}-%i.log.gz"
+                                 immediateFlush="false"
+                                 append="false">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="250 MB"/>
+            </Policies>
+        </RollingRandomAccessFile>
+        <RollingRandomAccessFile name="RollingRandomAccessFile" fileName="/local/deploy/logs/info.log"
+                                 filePattern="logs/$${date:yyyy-MM}/etl-%d{MM-dd-yyyy}-%i.log.gz"
+                                 immediateFlush="false"
+                                 append="false">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="250 MB"/>
+            </Policies>
+        </RollingRandomAccessFile>
+        <!--<Async name="AsyncConsole">-->
+        <!--<AppenderRef ref="Console"/>-->
+        <!--</Async>-->
+    </Appenders>
+    <Loggers>
+        <Root  level="TRACE">
+            <AppenderRef ref="RollingRandomAccessFileDebug" level="DEBUG"/>
+            <AppenderRef ref="RollingRandomAccessFile" level="INFO"/>
+            <AppenderRef ref="Console"  level="TRACE"/>
+        </Root>
+    </Loggers>
+</Configuration>
